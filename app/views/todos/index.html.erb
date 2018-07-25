@@ -1,1 +1,5 @@
-<% link_to todos_index_path, "Crear Todo" %=>
+<% @todos.each do |t| %>
+  <div class="card bg-faded">
+    <%= t.description %>
+  </div>
+<% end %>
