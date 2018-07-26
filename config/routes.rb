@@ -7,13 +7,14 @@ Rails.application.routes.draw do
   # route for show method
   get 'todos/:id', to: 'todos#show', as: 'todo'
   # route for edit method
-  get 'todos/:id/edit', to: 'todos#edit'
+  get 'todos/:id/edit', to: 'todos#edit', as: 'edit_todo'
   # route for update method
   patch 'todos/:id', to: 'todos#update'
   # route for destroy method
   delete 'todos/:id', to: 'todos#destroy'
+  # route for list method
+  get 'todos/list'
   # route for complete method
   get 'todos/:id', to: 'todos#complete'
-  # route for list
-  get 'todos/list'
+  
 end

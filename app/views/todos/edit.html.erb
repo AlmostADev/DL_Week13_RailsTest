@@ -1,10 +1,1 @@
-<h1> Edit ToDo Task </h1>
-<%= form_with model: @todo, local: true do |t| %>
-  <div class="card">
-    <%= t.label :description, "ToDo" %>
-    <%= t.text_field :description %>
-    <%= t.label :completed, "Done" %>
-    <%= t.check_box :completed %>
-    <%= t.submit "Save" %>
-  </div>
-<% end %>
+<%= render 'form' %>

@@ -1,7 +1,22 @@
-+
 <div class="row">
     <div class="container">
-        <div class="col-md-6">left-col</div>
-        <div class="col-md-6">right-col</div>
+        <div class="col-md-6">
+            <% @todos.each do |t| %>
+                <% if t.completed == false %>
+                <ul>
+                <li> <%= t.description %> </li>
+                </ul>
+                <% end %>
+            <% end %>
+        </div>
+        <div class="col-md-6">
+            <% @todos.each do |t| %>
+                <% if t.completed %>
+                    <ul>
+                    <li> <%= t.description %> </li>
+                    </ul>
+                <% end %>
+            <% end %>
+        </div>
     </div>
 </div>
