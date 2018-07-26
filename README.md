@@ -55,11 +55,11 @@
 - En el controller todos crear el método destroy. Este método debe buscar un ToDo en base al parámetro 'id'. (Todo.find) :heavy_check_mark:
 - Eliminar el ToDo y luego redireccionar al index de ToDos. :heavy_check_mark:
 - En la vista Index: agregar un link a Destroy (con el método delete) a cada ToDo listado. :heavy_check_mark:
-## Marcar como completado: :heavy_multiplication_x:
+## Marcar como completado: :heavy_check_mark:
 - Crear la ruta '/todos/:id/complete' que apunte al método todos#complete con el verbo get. :heavy_check_mark:
 - En el controller todos crear el método complete. Este método debe buscar un ToDo en base al parámetro 'id' (Todo.find) y asignarlo a a la variable @todo. Finalmente modificar el atributo completed = true, guardar el registro y redirigir al Index. :heavy_check_mark:
 - En la vista index, agregar un botón a cada ToDo que permita marcar como completado utilizando la ruta correspondiente. :heavy_check_mark:
-## Parte II: Landing nuevo y refactoring de vistas parciales. :heavy_multiplication_x:
+## Parte II: Landing nuevo y refactoring de vistas parciales. :heavy_check_mark:
 - Crear la ruta /todos/list con el verbo get. :heavy_check_mark:
 - Crear un método list en controller. Este método debe crear una variable de instancia @todos que almacene la colección de ToDos existentes. :heavy_check_mark:
 - Crear una vista list.html.erb. :heavy_check_mark:
