@@ -66,7 +66,7 @@
     - Esta vista debe -utilizando la grilla de bootstrap- separar la pantalla en dos secciones de 6 columnas cada una.
     - A la izquierda se deben listar los ToDos NO completados.
     - A la derecha se deben listar los ToDos completados.
-- Crear una vista parcial que contenga un navbar fixed de Bootstrap. :x:
+- Crear una vista parcial que contenga un navbar fixed de Bootstrap. :heavy_check_mark:
     - El navbar debe contener un link a Index, un link a List y un link al formulario de creación de nuevo ToDo.
     - Cargar la vista parcial en el layout.
 - Refactorizar los formularios utilizados en las vistas de creación y edición de un ToDo. Se debe crear una vista parcial que contenga el formulario, la cual debe ser implementada en ambas vistas. :x:
