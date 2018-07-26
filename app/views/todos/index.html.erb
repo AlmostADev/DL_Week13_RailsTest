@@ -2,6 +2,12 @@
 <% @todos.each do |t| %>
   <div class="card bg-faded">
     <%= t.description %>
-    <p><%= link_to 'Mostrar ToDo', todo_path %></p>
+    <%= t.label :completed, "Done" %>
+    <%= t.check_box :completed %>
+    #CRUD Buttons
+    <p><%= link_to 'Mostrar', todo_path(t.id) %></p>
+    <p><%= link_to 'Editar', edit_todo_path(t.id), class:'btn btn-success' %></p>
+    <p><%= link_to 'Borrar'  %></p>
   </div>
 <% end %>
+<%= link_to 'Crear ToDo', todos_new_path %>
