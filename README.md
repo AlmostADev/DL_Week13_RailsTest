@@ -60,12 +60,12 @@ completado o no.
 - En el controller todos crear el método destroy. Este método debe buscar un ToDo en base al parámetro 'id'. (Todo.find)
 - Eliminar el ToDo y luego redireccionar al index de ToDos.
 - En la vista Index: agregar un link a Destroy (con el método delete) a cada ToDo listado.
-## Marcar como completado: :x:
+## Marcar como completado: :heavy_multiplication_x:
 - Crear la ruta '/todos/:id/complete' que apunte al método todos#complete con el verbo get.
   
 - En el controller todos crear el método complete. Este método debe buscar un ToDo en base al parámetro 'id' (Todo.find) y asignarlo a a la variable @todo. Finalmente modificar el atributo completed = true, guardar el registro y redirigir al Index.
 - En la vista index, agregar un botón a cada ToDo que permita marcar como completado utilizando la ruta correspondiente.
-## Parte II: Landing nuevo y refactoring de vistas parciales. :x:
+## Parte II: Landing nuevo y refactoring de vistas parciales. :heavy_multiplication_x:
 - Crear la ruta /todos/list con el verbo get.
 - Crear un método list en controller.
 Este método debe crear una variable de
@@ -78,5 +78,5 @@ instancia @todos que almacene la colección de ToDos existentes.
     - El navbar debe contener un link a Index, un link a List y un link al formulario de creación de nuevo ToDo.
     - Cargar la vista parcial en el layout.
 - Refactorizar los formularios utilizados en las vistas de creación y edición de un ToDo. Se debe crear una vista parcial que contenga el formulario, la cual debe ser implementada en ambas vistas.
-## Parte III: Validaciones :x:
+## Parte III: Validaciones :heavy_multiplication_x:
 - Se debe validar que la descripción debe estar presente al crear un nuevo ToDo.

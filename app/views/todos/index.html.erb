@@ -2,6 +2,6 @@
 <% @todos.each do |t| %>
   <div class="card bg-faded">
     <%= t.description %>
-    <h2><%= link_to 'Mostrar ToDo', todo_path %></h2>
+    <p><%= link_to 'Mostrar ToDo', todo_path %></p>
   </div>
 <% end %>
