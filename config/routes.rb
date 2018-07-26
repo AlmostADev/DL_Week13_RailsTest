@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   patch 'todos/:id', to: 'todos#update'
   # route for destroy method
   delete 'todos/:id', to: 'todos#destroy'
+  # route for complete method
+  get 'todos/:id', to: 'todos#complete'
+  # route for list
+  get 'todos/list'
 end
