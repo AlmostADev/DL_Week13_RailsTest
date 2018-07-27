@@ -1,26 +1,46 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row m-4">
         <div class="col-md-6">
-            <h1>ToDo Still not Finished</h1>
+            <h1 class="text-center">ToDo Still not Finished</h1>
             <br>
+            <table class="table">
+                <thead class="thead-dark">
+                    <th> ID </th>
+                    <th> Description Task </th>
+                </thead>
             <% @todos.each do |t| %>
                 <% if t.completed == false %>
-                <ul>
-                <li> <%= t.description %> </li>
-                </ul>
+                    <tbody>
+                        <td> <%= "#{t.id}" %> </td>
+                        <td> <%= t.description %></td>
+                    </tbody>
+                
                 <% end %>
             <% end %>
+            </table>
         </div>
         <div class="col-md-6">
-            <h1>ToDo Finished</h1>
+            <h1 class="text-center">ToDo Finished</h1>
             <br>
-            <% @todos.each do |t| %>
-                <% if t.completed %>
-                    <ul>
-                    <li> <%= t.description %> </li>
-                    </ul>
-                <% end %>
-            <% end %>
+            <table class="table">
+                <thead class="thead-dark">
+                    <th> ID </th>
+                    <th> Description Task </th>
+                </thead>
+                <% @todos.each do |t| %>
+                    <% if t.completed %>
+                        <tbody>
+                            <td>
+                                <%= "#{t.id}" %>
+                            </td>
+                            <td>
+                                <%= t.description %>
+                            </td>
+                        </tbody>
+            
+                        <% end %>
+                            <% end %>
+            </table>
         </div>
     </div>
 </div>

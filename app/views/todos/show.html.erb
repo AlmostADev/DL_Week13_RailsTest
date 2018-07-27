@@ -1,5 +1,11 @@
-<h1><%= "ToDo Nº #{@todo.id}" %></h1>
-<div class="container">
-    <h2><%= "Description: #{@todo.description}" %></h2>
-    <h2><%= "State: #{@status}" %></h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            <h3><%= "ToDo Nº #{@todo.id}" %></h3>
+            <div class="container">
+                <h5><%= "Description: #{@todo.description}" %></h5>
+                <h5><%= "State: #{@status}" %></h5>
+            </div>
+        </div>
+    </div>
 </div>
