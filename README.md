@@ -70,5 +70,5 @@
     - El navbar debe contener un link a Index, un link a List y un link al formulario de creación de nuevo ToDo.
     - Cargar la vista parcial en el layout.
 - Refactorizar los formularios utilizados en las vistas de creación y edición de un ToDo. Se debe crear una vista parcial que contenga el formulario, la cual debe ser implementada en ambas vistas. :heavy_check_mark:
-## Parte III: Validaciones :heavy_multiplication_x:
-- Se debe validar que la descripción debe estar presente al crear un nuevo ToDo. :x:
+## Parte III: Validaciones :heavy_check_mark:
+- Se debe validar que la descripción debe estar presente al crear un nuevo ToDo. :heavy_check_mark:
