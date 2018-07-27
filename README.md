@@ -8,11 +8,11 @@
 #### En esta evaluación desarrollarás una ToDo List app que permita ingresar, leer, editar y eliminar ToDos. Cada ToDo debe poseer además la opción de ser marcado como completado.
 #### Buena suerte !!
 # Parte I: CRUD
-- Crear un nuevo proyecto en Rails 5.1 llamado todo_app.
-- Crear el controller todos (se debe crear vacío, los métodos se irán agregando manualmente a medida que avanzamos)
-- Crear el model Todo con los campos description (string) y completed (boolean). Revisar y correr la migración.
-- Agregar el CDN de jQuery al layout.
-- Agregar el CDN de Bootstrap al layout.
+- Crear un nuevo proyecto en Rails 5.1 llamado todo_app. :heavy_check_mark:
+- Crear el controller todos (se debe crear vacío, los métodos se irán agregando manualmente a medida que avanzamos) :heavy_check_mark:
+- Crear el model Todo con los campos description (string) y completed (boolean). Revisar y correr la migración. :heavy_check_mark:
+- Agregar el CDN de jQuery al layout. :heavy_check_mark:
+- Agregar el CDN de Bootstrap al layout. :heavy_check_mark:
             
 ## Index: :heavy_check_mark:
 - Crear la ruta '/todos' que apunte al método todos#index con el verbo get. :heavy_check_mark:

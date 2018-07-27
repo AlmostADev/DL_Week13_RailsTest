@@ -1,13 +1,27 @@
-<h2><%= link_to 'Crear ToDo', todos_new_path %></h2>
+<div class="p-5">
+  <h4><%= link_to 'Create ToDo Task', todos_new_path, class: 'btn btn-danger' %></h4>
+</div>
 <% @todos.each do |t| %>
-  <div class="card bg-faded">
-    <%= t.description %>
-    <%= t.label :completed, "Done" %>
-    <%= t.check_box :completed %>
-    #CRUD Buttons
-    <p><%= link_to 'Mostrar', todo_path(t.id) %></p>
-    <p><%= link_to 'Editar', edit_todo_path(t.id), class:'btn btn-success' %></p>
-    <p><%= link_to 'Borrar'  %></p>
+  <div class="card card-ToDo bg-faded p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><%= t.description %></h5>
+        </div>
+        <div class="col-md-6 text-center">
+          <ul>
+            <li class="crd-btn">
+              <%= link_to 'Show', todo_path(t.id), class:'btn btn-success' %>
+            </li>
+            <li class="crd-btn">
+              <%= link_to 'Edit', edit_todo_path(t.id), class:'btn btn-info' %>
+            </li>
+            <li class="crd-btn">
+              <%= link_to 'Delete', t, method: :delete, class: 'btn btn-danger' %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 <% end %>
-<%= link_to 'Crear ToDo', todos_new_path %>

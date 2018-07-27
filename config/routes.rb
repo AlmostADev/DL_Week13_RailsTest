@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'todos/new'
   # route for created method
   post 'todos', to: 'todos#create'
+  # route for list method
+  get 'todos/list'
   # route for show method
   get 'todos/:id', to: 'todos#show', as: 'todo'
   # route for edit method
@@ -12,9 +14,8 @@ Rails.application.routes.draw do
   patch 'todos/:id', to: 'todos#update'
   # route for destroy method
   delete 'todos/:id', to: 'todos#destroy'
-  # route for list method
-  get 'todos/list'
+  
   # route for complete method
   get 'todos/:id', to: 'todos#complete'
-  
+  root 'todos#index'
 end

@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+ html, body {
+    margin: 0;
+    height: 100%;
+ }
+ 
+ body {
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) no-repeat;
+ }
+
+ .crd-btn {
+    float: left;
+    padding-left: 15px;
+    list-style-type: none;
+ }
+
+ .card-ToDo {
+    background-color: orange;
+    margin: 30px;
+ }
